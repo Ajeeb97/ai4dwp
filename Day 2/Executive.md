@@ -1,0 +1,2 @@
+Executive:
+Your access is available and your data is safe. During the Windows 11 upgrade, the old VPN app was removed, and the new app was not automatically installed because an installation check missed it. We removed outdated VPN setup records on the device, forced a management sync, installed the new VPN app, applied split-tunnel settings, and confirmed connection to all internal subnets. No action is needed unless you still cannot connect.

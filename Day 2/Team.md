@@ -1,0 +1,2 @@
+Team:
+Your access is available and your data is safe, and no data was lost. What happened: the Windows 11 upgrade removed the old VPN app, and the new app was not automatically reinstalled because the install check did not detect the gap. IT removed outdated VPN setup records on the device, forced a management sync, installed the new VPN app, applied split-tunnel settings, and confirmed connection to all internal subnets. If you see the same issue, contact the service desk.
