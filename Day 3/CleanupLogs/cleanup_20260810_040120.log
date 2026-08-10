@@ -1,0 +1,8 @@
+﻿[2026-08-10 04:01:20] [INFO] ==========================================
+[2026-08-10 04:01:20] [INFO] DWP Temp Cleanup Script - Run: 20260810_040120
+[2026-08-10 04:01:20] [INFO] ParameterSet : Rollback
+[2026-08-10 04:01:20] [INFO] DryRun       : True
+[2026-08-10 04:01:20] [INFO] OlderThanDays: 0
+[2026-08-10 04:01:20] [INFO] ==========================================
+[2026-08-10 04:01:20] [INFO] Rollback mode activated.
+[2026-08-10 04:01:20] [ERROR] No rollback archives found in: C:\Users\labuser\Documents\Training\Day 3\CleanupRollback

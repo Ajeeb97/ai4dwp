@@ -14,18 +14,23 @@
     Restores files from the most recent rollback archive created by this script.
 .PARAMETER RollbackArchivePath
     Full path to a specific rollback archive folder to restore from (overrides auto-detect).
+.PARAMETER DryRun
+    When combined with -Rollback, lists files that would be restored without copying anything.
 .EXAMPLE
     .\Cleanup-TempFiles.ps1 -DryRun
     .\Cleanup-TempFiles.ps1 -OlderThanDays 30
     .\Cleanup-TempFiles.ps1 -OlderThanDays 7 -DryRun
     .\Cleanup-TempFiles.ps1 -Rollback
+    .\Cleanup-TempFiles.ps1 -Rollback -DryRun
     .\Cleanup-TempFiles.ps1 -Rollback -RollbackArchivePath "C:\CleanupRollback\20260810_143000"
+    .\Cleanup-TempFiles.ps1 -Rollback -RollbackArchivePath "C:\CleanupRollback\20260810_143000" -DryRun
 #>
 
 [CmdletBinding(SupportsShouldProcess, DefaultParameterSetName = 'Cleanup')]
 param(
-    # Preview mode - no files are deleted when this switch is set.
+    # Preview mode - no files are deleted or restored when this switch is set.
     [Parameter(ParameterSetName = 'Cleanup')]
+    [Parameter(ParameterSetName = 'Rollback')]
     [switch]$DryRun,
 
     # Age threshold in days; files newer than this are skipped.
@@ -136,6 +141,7 @@ if ($Rollback) {
     }
 
     Write-Log "Restoring from archive: $RollbackArchivePath"
+    if ($DryRun) { Write-Log '--- DRY RUN - no files will be restored ---' 'WARN' }
     $entries        = Import-Csv -Path $manifest
     $restoredCount  = 0
     $skippedCount   = 0
@@ -158,6 +164,12 @@ if ($Rollback) {
             continue
         }
 
+        if ($DryRun) {
+            Write-Log "WOULD RESTORE: $originalPath  [from: $backupPath]"
+            $restoredCount++
+            continue
+        }
+
         try {
             $destDir = Split-Path -Parent $originalPath
             if (-not (Test-Path $destDir)) {
@@ -174,7 +186,8 @@ if ($Rollback) {
     }
 
     Write-Log "------------------------------------------"
-    Write-Log "Rollback Summary - Restored: $restoredCount  Skipped: $skippedCount  Errors: $rollbackErrors"
+    $rollbackMode = if ($DryRun) { 'DRY RUN' } else { 'COMPLETE' }
+    Write-Log "Rollback $rollbackMode - Would restore: $restoredCount  Skipped: $skippedCount  Errors: $rollbackErrors"
     Write-Log "Log saved to: $LogFile"
     exit 0
 }

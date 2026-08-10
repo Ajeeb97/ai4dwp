@@ -1,0 +1,22 @@
+﻿[2026-08-10 03:52:26] [INFO] ==========================================
+[2026-08-10 03:52:26] [INFO] DWP Temp Cleanup Script - Run: 20260810_035226
+[2026-08-10 03:52:26] [INFO] ParameterSet : Cleanup
+[2026-08-10 03:52:26] [INFO] DryRun       : True
+[2026-08-10 03:52:26] [INFO] OlderThanDays: 0
+[2026-08-10 03:52:26] [INFO] ==========================================
+[2026-08-10 03:52:26] [INFO] Discovering files in target paths...
+[2026-08-10 03:52:26] [INFO] Scanning: C:\Users\labuser\AppData\Local\Temp\2
+[2026-08-10 03:52:26] [INFO] Scanning: C:\Windows\Temp
+[2026-08-10 03:52:26] [INFO] Files found matching criteria: 9
+[2026-08-10 03:52:26] [WARN] --- DRY RUN - no files will be deleted ---
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\863c1671-1f15-4a4c-804e-c89ea4b1fca7.tmp  [LastWrite: 08/10/2026 03:27:08]  [Size: 0 bytes]
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\a44492e8-76d5-4a3e-ab4d-7f33bcf9f9fe.tmp  [LastWrite: 08/10/2026 03:28:14]  [Size: 811154 bytes]
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\b3e11e57-181b-4138-8dcd-326c756be174.tmp  [LastWrite: 08/10/2026 03:40:46]  [Size: 9616 bytes]
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\ba7ca847-f146-4f8b-8585-73b5169faa28.tmp  [LastWrite: 08/10/2026 03:27:07]  [Size: 0 bytes]
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\c32a104b-af4e-4533-aa56-02b53f0f999d.tmp  [LastWrite: 08/10/2026 03:28:44]  [Size: 188095 bytes]
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\cv_debug.log  [LastWrite: 08/10/2026 03:27:35]  [Size: 122 bytes]
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\de641edc-357e-4573-8ce8-a9586c2bbceb.tmp  [LastWrite: 08/10/2026 03:27:06]  [Size: 0 bytes]
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\dicts.dat  [LastWrite: 08/10/2026 03:27:15]  [Size: 10 bytes]
+[2026-08-10 03:52:26] [INFO] WOULD DELETE: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\__init__.py  [LastWrite: 08/10/2026 03:27:15]  [Size: 176 bytes]
+[2026-08-10 03:52:26] [SUCCESS] --- DRY RUN COMPLETE - 9 file(s), 0.96 MB would be freed ---
+[2026-08-10 03:52:27] [INFO] Log saved to: C:\Users\labuser\Documents\Training\Day 3\CleanupLogs\cleanup_20260810_035226.log

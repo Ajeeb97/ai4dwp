@@ -1,0 +1,21 @@
+﻿[2026-08-10 04:02:12] [INFO] ==========================================
+[2026-08-10 04:02:12] [INFO] DWP Temp Cleanup Script - Run: 20260810_040212
+[2026-08-10 04:02:12] [INFO] ParameterSet : Rollback
+[2026-08-10 04:02:12] [INFO] DryRun       : False
+[2026-08-10 04:02:12] [INFO] OlderThanDays: 0
+[2026-08-10 04:02:12] [INFO] ==========================================
+[2026-08-10 04:02:12] [INFO] Rollback mode activated.
+[2026-08-10 04:02:12] [INFO] Restoring from archive: C:\Users\labuser\Documents\Training\Day 3\CleanupRollback\20260810_040205
+[2026-08-10 04:02:12] [WARN] SKIP (already exists): C:\Users\labuser\AppData\Local\Temp\2\863c1671-1f15-4a4c-804e-c89ea4b1fca7.tmp
+[2026-08-10 04:02:12] [WARN] SKIP (already exists): C:\Users\labuser\AppData\Local\Temp\2\a44492e8-76d5-4a3e-ab4d-7f33bcf9f9fe.tmp
+[2026-08-10 04:02:12] [WARN] SKIP (already exists): C:\Users\labuser\AppData\Local\Temp\2\b3e11e57-181b-4138-8dcd-326c756be174.tmp
+[2026-08-10 04:02:12] [WARN] SKIP (already exists): C:\Users\labuser\AppData\Local\Temp\2\ba7ca847-f146-4f8b-8585-73b5169faa28.tmp
+[2026-08-10 04:02:12] [WARN] SKIP (already exists): C:\Users\labuser\AppData\Local\Temp\2\c32a104b-af4e-4533-aa56-02b53f0f999d.tmp
+[2026-08-10 04:02:12] [SUCCESS] RESTORED: C:\Users\labuser\AppData\Local\Temp\2\cv_debug.log
+[2026-08-10 04:02:12] [WARN] SKIP (already exists): C:\Users\labuser\AppData\Local\Temp\2\de641edc-357e-4573-8ce8-a9586c2bbceb.tmp
+[2026-08-10 04:02:12] [SUCCESS] RESTORED: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\dicts.dat
+[2026-08-10 04:02:12] [SUCCESS] RESTORED: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\__init__.py
+[2026-08-10 04:02:12] [SUCCESS] RESTORED: C:\Users\labuser\AppData\Local\Temp\2\system-commandline-sentinel-files\dotnet-suggest-registration-git-credential-manager, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null
+[2026-08-10 04:02:12] [INFO] ------------------------------------------
+[2026-08-10 04:02:12] [INFO] Rollback COMPLETE - Would restore: 4  Skipped: 6  Errors: 0
+[2026-08-10 04:02:12] [INFO] Log saved to: C:\Users\labuser\Documents\Training\Day 3\CleanupLogs\cleanup_20260810_040212.log

@@ -1,0 +1,40 @@
+﻿[2026-08-10 04:02:05] [INFO] ==========================================
+[2026-08-10 04:02:05] [INFO] DWP Temp Cleanup Script - Run: 20260810_040205
+[2026-08-10 04:02:05] [INFO] ParameterSet : Cleanup
+[2026-08-10 04:02:05] [INFO] DryRun       : False
+[2026-08-10 04:02:05] [INFO] OlderThanDays: 0
+[2026-08-10 04:02:05] [INFO] ==========================================
+[2026-08-10 04:02:05] [INFO] Discovering files in target paths...
+[2026-08-10 04:02:05] [INFO] Scanning: C:\Users\labuser\AppData\Local\Temp\2
+[2026-08-10 04:02:05] [INFO] Scanning: C:\Windows\Temp
+[2026-08-10 04:02:05] [INFO] Files found matching criteria: 10
+[2026-08-10 04:02:05] [INFO] Rollback archive created: C:\Users\labuser\Documents\Training\Day 3\CleanupRollback\20260810_040205
+[2026-08-10 04:02:05] [INFO] Manifest written: C:\Users\labuser\Documents\Training\Day 3\CleanupRollback\20260810_040205\manifest.csv  (10 entries, 0 archive errors)
+[2026-08-10 04:02:05] [INFO] Starting deletion...
+[2026-08-10 04:02:05] [WARN] LOCKED (skipped): C:\Users\labuser\AppData\Local\Temp\2\863c1671-1f15-4a4c-804e-c89ea4b1fca7.tmp - The process cannot access the file 'C:\Users\labuser\AppData\Local\Temp\2\863c1671-1f15-4a4c-804e-c89ea4b1fca7.tmp' because it is being used by another process.
+[2026-08-10 04:02:05] [WARN] LOCKED (skipped): C:\Users\labuser\AppData\Local\Temp\2\a44492e8-76d5-4a3e-ab4d-7f33bcf9f9fe.tmp - The process cannot access the file 'C:\Users\labuser\AppData\Local\Temp\2\a44492e8-76d5-4a3e-ab4d-7f33bcf9f9fe.tmp' because it is being used by another process.
+[2026-08-10 04:02:05] [WARN] LOCKED (skipped): C:\Users\labuser\AppData\Local\Temp\2\b3e11e57-181b-4138-8dcd-326c756be174.tmp - The process cannot access the file 'C:\Users\labuser\AppData\Local\Temp\2\b3e11e57-181b-4138-8dcd-326c756be174.tmp' because it is being used by another process.
+[2026-08-10 04:02:05] [WARN] LOCKED (skipped): C:\Users\labuser\AppData\Local\Temp\2\ba7ca847-f146-4f8b-8585-73b5169faa28.tmp - The process cannot access the file 'C:\Users\labuser\AppData\Local\Temp\2\ba7ca847-f146-4f8b-8585-73b5169faa28.tmp' because it is being used by another process.
+[2026-08-10 04:02:05] [WARN] LOCKED (skipped): C:\Users\labuser\AppData\Local\Temp\2\c32a104b-af4e-4533-aa56-02b53f0f999d.tmp - The process cannot access the file 'C:\Users\labuser\AppData\Local\Temp\2\c32a104b-af4e-4533-aa56-02b53f0f999d.tmp' because it is being used by another process.
+[2026-08-10 04:02:05] [SUCCESS] DELETED: C:\Users\labuser\AppData\Local\Temp\2\cv_debug.log  [122 bytes]
+[2026-08-10 04:02:05] [WARN] LOCKED (skipped): C:\Users\labuser\AppData\Local\Temp\2\de641edc-357e-4573-8ce8-a9586c2bbceb.tmp - The process cannot access the file 'C:\Users\labuser\AppData\Local\Temp\2\de641edc-357e-4573-8ce8-a9586c2bbceb.tmp' because it is being used by another process.
+[2026-08-10 04:02:05] [SUCCESS] DELETED: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\dicts.dat  [10 bytes]
+[2026-08-10 04:02:05] [SUCCESS] DELETED: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\__init__.py  [176 bytes]
+[2026-08-10 04:02:05] [SUCCESS] DELETED: C:\Users\labuser\AppData\Local\Temp\2\system-commandline-sentinel-files\dotnet-suggest-registration-git-credential-manager, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null  [501 bytes]
+[2026-08-10 04:02:05] [INFO] Pruning empty directories...
+[2026-08-10 04:02:05] [INFO] REMOVED EMPTY DIR: C:\Users\labuser\AppData\Local\Temp\2\WPF
+[2026-08-10 04:02:06] [INFO] REMOVED EMPTY DIR: C:\Users\labuser\AppData\Local\Temp\2\vscode-stable-system-x64
+[2026-08-10 04:02:06] [INFO] REMOVED EMPTY DIR: C:\Users\labuser\AppData\Local\Temp\2\system-commandline-sentinel-files
+[2026-08-10 04:02:06] [INFO] REMOVED EMPTY DIR: C:\Users\labuser\AppData\Local\Temp\2\PSES-9800
+[2026-08-10 04:02:06] [INFO] REMOVED EMPTY DIR: C:\Users\labuser\AppData\Local\Temp\2\node-compile-cache\v24.18.0-x64-bd999d3d
+[2026-08-10 04:02:06] [INFO] REMOVED EMPTY DIR: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9
+[2026-08-10 04:02:06] [INFO] ==========================================
+[2026-08-10 04:02:06] [INFO] CLEANUP SUMMARY
+[2026-08-10 04:02:06] [INFO]   Deleted      : 4 file(s)  (0 MB freed)
+[2026-08-10 04:02:06] [INFO]   Skipped      : 0 (already absent)
+[2026-08-10 04:02:06] [INFO]   Locked       : 6 (in use by another process)
+[2026-08-10 04:02:06] [INFO]   Errors       : 0
+[2026-08-10 04:02:06] [INFO]   Archive errors: 0
+[2026-08-10 04:02:06] [INFO]   Rollback from: C:\Users\labuser\Documents\Training\Day 3\CleanupRollback\20260810_040205
+[2026-08-10 04:02:06] [INFO]   Log file     : C:\Users\labuser\Documents\Training\Day 3\CleanupLogs\cleanup_20260810_040205.log
+[2026-08-10 04:02:06] [INFO] ==========================================
